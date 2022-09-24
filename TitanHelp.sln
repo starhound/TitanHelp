@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TitanHelp.WebApp", "TitanHelp.WebApp\TitanHelp.WebApp.csproj", "{5E4821E2-915D-4716-B272-CCB19BAF0C0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TitanHelp.WebApp", "TitanHelp.WebApp\TitanHelp.WebApp.csproj", "{5E4821E2-915D-4716-B272-CCB19BAF0C0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TitanHelp.Tests", "TitanHelp.Tests\TitanHelp.Tests.csproj", "{1587B44D-18C2-46BD-BB64-288026C5CB0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TitanHelp.Tests", "TitanHelp.Tests\TitanHelp.Tests.csproj", "{1587B44D-18C2-46BD-BB64-288026C5CB0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TitanHelp.EntityFramework", "TitanHelp.EntityFramework\TitanHelp.EntityFramework.csproj", "{AA0ADDD5-D604-4FA2-B0A5-3913AC6BF8AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TitanHelp.EntityFramework", "TitanHelp.EntityFramework\TitanHelp.EntityFramework.csproj", "{AA0ADDD5-D604-4FA2-B0A5-3913AC6BF8AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TitanHelp.Services", "TitanHelp.Services\TitanHelp.Services.csproj", "{3F917C54-9D54-45E3-A8B6-D232E2912A52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TitanHelp.Services", "TitanHelp.Services\TitanHelp.Services.csproj", "{3F917C54-9D54-45E3-A8B6-D232E2912A52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

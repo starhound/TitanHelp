@@ -25,12 +25,7 @@ namespace TitanHelp.WebApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddRazorPages();
-
-            services.AddDbContext<TicketContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("TicketContext")));
-
-            services.AddControllersWithViews();
+            //services.AddDbContext<TicketContext>();
 
         }
 
@@ -50,15 +45,8 @@ namespace TitanHelp.WebApp
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
             app.UseRouting();
-
             app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapRazorPages();
-            });
         }
     }
 }
