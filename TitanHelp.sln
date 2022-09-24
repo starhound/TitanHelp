@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TitanHelp.EntityFramework",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TitanHelp.Services", "TitanHelp.Services\TitanHelp.Services.csproj", "{3F917C54-9D54-45E3-A8B6-D232E2912A52}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TitanHelp.Data", "TitanHelp.Data\TitanHelp.Data.csproj", "{DA218DE5-504E-49E5-8D5C-B73315DF8D9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{3F917C54-9D54-45E3-A8B6-D232E2912A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F917C54-9D54-45E3-A8B6-D232E2912A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F917C54-9D54-45E3-A8B6-D232E2912A52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA218DE5-504E-49E5-8D5C-B73315DF8D9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA218DE5-504E-49E5-8D5C-B73315DF8D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA218DE5-504E-49E5-8D5C-B73315DF8D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA218DE5-504E-49E5-8D5C-B73315DF8D9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
