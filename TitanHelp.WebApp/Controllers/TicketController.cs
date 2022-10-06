@@ -30,7 +30,14 @@ namespace TitanHelp.WebApp.Controllers
         public IActionResult Post(Ticket newTicket) 
         {
             bool success = _ticketService.CreateNewTicket(newTicket);
-            return Ok(HttpStatusCode.Created);
+            if(success)
+            {
+                return Ok(HttpStatusCode.Created);
+            }
+            else
+            {
+                return BadRequest(newTicket);
+            }
         }
     }
 }
