@@ -25,13 +25,17 @@ namespace TitanHelp.WebApp.Controllers
         [Route("Ticket/getTicket")]
         public IActionResult Get(int ticketId)
         {
-
-            return Ok(ticketId);
+            var ticket = _ticketService.QueryTicketById(ticketId);
+            if(ticket is not null)
+            {
+                return Ok(ticket);
+            }
+            return BadRequest(ticketId);
         }
 
         [HttpPost]
         [Route("Ticket/newTicket")]
-        public IActionResult Post(Ticket newTicket) 
+        public IActionResult NewTicket([FromForm] Ticket newTicket) 
         {
             bool success = _ticketService.CreateNewTicket(newTicket);
             if(success)

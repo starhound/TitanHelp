@@ -22,5 +22,11 @@ namespace TitanHelp.EntityFramework.Repositories
             _dbContext.Add(newTicket);
             return _dbContext.SaveChanges() > 0;
         }
+
+        public Ticket? QueryTicketById(int ticketId)
+        {
+            var ticket = _dbContext.Tickets.FirstOrDefault(x => x.TicketID == ticketId);
+            return ticket;
+        }
     }
 }

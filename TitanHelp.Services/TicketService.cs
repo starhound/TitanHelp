@@ -7,12 +7,16 @@ namespace TitanHelp.Services
 {
     public class TicketService
     {
-        public TicketContext _context { get;set;} 
         public TicketRepository repository { get; set; }
         public TicketService()
         {
             TicketRepository ticketRepository = new TicketRepository(new TicketContext());
             repository = ticketRepository;
+        }
+
+        public Ticket? QueryTicketById(int ticketId)
+        {
+            return repository.QueryTicketById(ticketId);
         }
 
         public bool CreateNewTicket(Ticket newTicket)
