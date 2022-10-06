@@ -17,8 +17,5 @@ namespace TitanHelp.Data.Models
         public DateOnly CompletedDate { get; set; }
         public string? IssueDescription { get; set; }
         public bool IsActive { get; set; }
-
-        public Technician?Technician { get; set; }
-        public Customer? Customer { get; set; }
     }
 }
