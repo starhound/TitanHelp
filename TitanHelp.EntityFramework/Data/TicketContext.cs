@@ -15,8 +15,9 @@ namespace TitanHelp.EntityFramework.Data
 {
     public class TicketContext : DbContext
     {
-        public DbSet<Technician> Blogs { get; set; }
-        public DbSet<Ticket> Posts { get; set; }
+        public DbSet<Technician> Technicians { get; set; }
+        public DbSet<Ticket> Tickets { get; set; }
+        public DbSet<Customer> Customers { get; set; }
 
         public string DbPath { get; }
 

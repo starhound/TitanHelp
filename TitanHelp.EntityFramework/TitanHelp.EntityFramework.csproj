@@ -25,4 +25,8 @@
     <ProjectReference Include="..\TitanHelp.WebApp\TitanHelp.WebApp.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>
