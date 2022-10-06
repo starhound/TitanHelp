@@ -9,7 +9,7 @@ using TitanHelp.EntityFramework.Data;
 
 namespace TitanHelp.EntityFramework.Repositories
 {
-    internal class TicketRepository
+    public class TicketRepository
     {
         public TicketContext _dbContext { get; set; }
         public TicketRepository(TicketContext dbContext)
@@ -20,8 +20,7 @@ namespace TitanHelp.EntityFramework.Repositories
         public bool WriteNewTicketCommand(Ticket newTicket)
         {
             _dbContext.Add(newTicket);
-            _dbContext.SaveChanges();
-            return true;
+            return _dbContext.SaveChanges() > 0;
         }
     }
 }
