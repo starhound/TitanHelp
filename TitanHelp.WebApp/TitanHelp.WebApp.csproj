@@ -15,6 +15,7 @@
 	<ItemGroup>
 		<ProjectReference Include="..\TitanHelp.Services\TitanHelp.Services.csproj" />
 		<ProjectReference Include="..\TitanHelp.Data\TitanHelp.Data.csproj" />
+		<ProjectReference Include="..\TitanHelp.EntityFramework\TitanHelp.EntityFramework.csproj" />
 
 	</ItemGroup>
 </Project>

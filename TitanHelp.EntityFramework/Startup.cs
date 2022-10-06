@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using TitanHelp.EntityFramework.Data;
 
-namespace TitanHelp.WebApp
+namespace TitanHelp.EntityFramework
 {
     public class Startup
     {

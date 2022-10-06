@@ -1,4 +1,6 @@
 
+using Microsoft.EntityFrameworkCore;
+using TitanHelp.EntityFramework.Data;
 using TitanHelp.Services;
 
 namespace TitanHelp.WebApp
@@ -13,6 +15,20 @@ namespace TitanHelp.WebApp
             builder.Services.AddControllersWithViews();
             // DI
             builder.Services.AddScoped<TicketService>();
+
+            try
+            {
+                using (var db = new TicketContext())
+                {
+                    db.Database.EnsureCreated();
+                    db.Database.Migrate();
+                }
+            }
+            catch(Exception ex)
+            {
+
+            }
+           
 
             var app = builder.Build();
 
