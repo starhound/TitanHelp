@@ -41,6 +41,17 @@ namespace TitanHelp.WebApp.Controllers
             return Ok(tickets);
         }
 
+        [HttpDelete]
+        [Route("Ticket/deleteTicket")]
+        public IActionResult DeleteTicket(int ticketId)
+        {
+            if(_ticketService.DeleteTicket(ticketId))
+            {
+                return Ok(HttpStatusCode.Accepted);
+            }
+            return BadRequest(ticketId.ToString());
+        }
+
         [HttpPost]
         [Route("Ticket/newTicket")]
         public IActionResult NewTicket([FromForm] Ticket newTicket) 

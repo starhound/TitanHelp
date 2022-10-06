@@ -33,5 +33,14 @@ namespace TitanHelp.EntityFramework.Repositories
         {
             return _dbContext.Tickets.OrderByDescending(x => x.TicketID);
         }
+
+        public bool DeleteTicketById(int ticketId)
+        {
+            var ticket = _dbContext.Tickets.First(x => x.TicketID == ticketId);
+            if (ticket == null)
+                return false;
+            _dbContext.Tickets.Remove(ticket);
+            return true;
+        }
     }
 }

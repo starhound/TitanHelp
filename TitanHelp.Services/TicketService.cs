@@ -35,5 +35,10 @@ namespace TitanHelp.Services
         {
             return repository.QueryAllTickets();
         }
+
+        public bool DeleteTicket(int ticketId)
+        {
+            return repository.DeleteTicketById(ticketId);
+        }
     }
 }
