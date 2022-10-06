@@ -17,6 +17,12 @@ namespace TitanHelp.Services
 
         public bool CreateNewTicket(Ticket newTicket)
         {
+            if(newTicket is null) 
+                return false;
+            if (newTicket.CustID is 0)
+                return false;
+            if (newTicket.TechnicianID is null)
+                return false;
             var result = repository.WriteNewTicketCommand(newTicket);
             return result;
         }

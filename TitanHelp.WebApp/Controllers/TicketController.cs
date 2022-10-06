@@ -29,7 +29,7 @@ namespace TitanHelp.WebApp.Controllers
 
         [HttpPost]
         [Route("Ticket/newTicket")]
-        public IActionResult Post([FromBody] Ticket newTicket) 
+        public IActionResult Post(Ticket newTicket) 
         {
             bool success = _ticketService.CreateNewTicket(newTicket);
             if(success)

@@ -9,8 +9,12 @@ namespace TitanHelp.Data.Models
 {
     public class Ticket
     {
+        public Ticket()
+        {
+
+        }
+
         public int? TicketID { get; set; }
-        [Required]
         public int? TechnicianID { get; set; }
         public int CustID { get; set; }
         public DateTime? CreatedDate { get; set; }
