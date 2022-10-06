@@ -33,6 +33,14 @@ namespace TitanHelp.WebApp.Controllers
             return BadRequest(ticketId);
         }
 
+        [HttpGet]
+        [Route("Ticket/getTickets")]
+        public IActionResult GetTickets()
+        {
+            IEnumerable<Ticket> tickets = _ticketService.QueryTickets();
+            return Ok(tickets);
+        }
+
         [HttpPost]
         [Route("Ticket/newTicket")]
         public IActionResult NewTicket([FromForm] Ticket newTicket) 

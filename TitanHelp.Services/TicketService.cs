@@ -30,5 +30,10 @@ namespace TitanHelp.Services
             var result = repository.WriteNewTicketCommand(newTicket);
             return result;
         }
+
+        public IEnumerable<Ticket> QueryTickets()
+        {
+            return repository.QueryAllTickets();
+        }
     }
 }

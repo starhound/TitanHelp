@@ -28,5 +28,10 @@ namespace TitanHelp.EntityFramework.Repositories
             var ticket = _dbContext.Tickets.FirstOrDefault(x => x.TicketID == ticketId);
             return ticket;
         }
+
+        public IEnumerable<Ticket> QueryAllTickets()
+        {
+            return _dbContext.Tickets.OrderByDescending(x => x.TicketID);
+        }
     }
 }
