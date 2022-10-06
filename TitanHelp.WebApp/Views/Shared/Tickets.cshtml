@@ -2,21 +2,26 @@
 
 <table>
     <thead>
-        <tr><th>Ticket ID</th></tr>
-        <tr><th>Technician ID</th></tr>
-        <tr><th>Customer ID</th></tr>
-
+       <th>Ticket ID</th>
+       <th>Technician ID</th>
+       <th>Customer ID</th>
+       <th>Created Date</th>
+       <th>Completed Date</th>
+       <th>Is Active</th>
+       <th>Issue</th>
     </thead>
     <tbody>
         @foreach (Ticket ticket in Model.AllTickets)
         {
-            <tr><td>@ticket.TicketID</td></tr>
-            <tr><td>@ticket.TechnicianID</td></tr>
-            <tr><td>@ticket.CustID</td></tr>
-            <tr><td>@ticket.CreatedDate</td></tr>
-            <tr><td>@ticket.CompletedDate</td></tr>
-            <tr><td>@ticket.IsActive</td></tr>
-            <tr><td>@ticket.IssueDescription</td></tr>
+            <tr>
+                <td>@ticket.TicketID</td>
+                <td>@ticket.TechnicianID</td>
+                <td>@ticket.CustID</td>
+                <td>@ticket.CreatedDate</td>
+                <td>@ticket.CompletedDate</td>
+                <td>@ticket.IsActive</td>
+                <td>@ticket.IssueDescription</td>
+            </tr>
         }
     </tbody>
 </table>
