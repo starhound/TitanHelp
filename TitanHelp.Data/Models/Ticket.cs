@@ -9,12 +9,12 @@ namespace TitanHelp.Data.Models
 {
     public class Ticket
     {
-        public int TicketID { get; set; }
+        public int? TicketID { get; set; }
         [Required]
-        public int TechnicianID { get; set; }
+        public int? TechnicianID { get; set; }
         public int CustID { get; set; }
-        public DateOnly CreatedDate { get; set; }
-        public DateOnly CompletedDate { get; set; }
+        public DateTime? CreatedDate { get; set; }
+        public DateTime? CompletedDate { get; set; }
         public string? IssueDescription { get; set; }
         public bool IsActive { get; set; }
     }

@@ -20,6 +20,7 @@ namespace TitanHelp.WebApp.Controllers
         }
 
         [HttpGet]
+        [Route("Ticket/getTicket")]
         public IActionResult Get(int ticketId)
         {
 
@@ -27,7 +28,8 @@ namespace TitanHelp.WebApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post(Ticket newTicket) 
+        [Route("Ticket/newTicket")]
+        public IActionResult Post([FromBody] Ticket newTicket) 
         {
             bool success = _ticketService.CreateNewTicket(newTicket);
             if(success)
