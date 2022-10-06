@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="TitanHelp.WebApp">
+      <HintPath>..\TitanHelp.WebApp\obj\Debug\net6.0\ref\TitanHelp.WebApp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
