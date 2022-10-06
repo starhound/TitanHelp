@@ -18,6 +18,11 @@ namespace TitanHelp.WebApp
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            using (var db = new TicketContext())
+            {
+                db.Database.EnsureCreated();
+                db.Database.Migrate();
+            }
         }
 
         public IConfiguration Configuration { get; }
