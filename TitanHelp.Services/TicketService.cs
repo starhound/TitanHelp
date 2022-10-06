@@ -5,10 +5,9 @@ namespace TitanHelp.Services
 {
     public class TicketService
     {
-
         public TicketService()
         {
-
+            
         }
 
         public bool CreateNewTicket(Ticket newTicket)

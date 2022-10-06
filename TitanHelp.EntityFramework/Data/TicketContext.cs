@@ -1,7 +1,6 @@
 ﻿using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Sqlite;
-using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
