@@ -2,6 +2,7 @@
 using System.Net;
 using TitanHelp.Data.Models;
 using TitanHelp.Services;
+using TitanHelp.WebApp.Models;
 
 namespace TitanHelp.WebApp.Controllers
 {
@@ -19,6 +20,14 @@ namespace TitanHelp.WebApp.Controllers
         public IActionResult Ticket()
         {
             return View("Ticket");
+        }
+
+        [Route("Tickets")]
+        public IActionResult Tickets()
+        {
+            TicketsModel allTickets = new TicketsModel();
+            allTickets.AllTickets = _ticketService.QueryTickets();
+            return View("Tickets", allTickets);
         }
 
         [HttpGet]

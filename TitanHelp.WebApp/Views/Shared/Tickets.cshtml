@@ -1,0 +1,22 @@
+@using TitanHelp.Data.Models;
+
+<table>
+    <thead>
+        <tr><th>Ticket ID</th></tr>
+        <tr><th>Technician ID</th></tr>
+        <tr><th>Customer ID</th></tr>
+
+    </thead>
+    <tbody>
+        @foreach (Ticket ticket in Model.AllTickets)
+        {
+            <tr><td>@ticket.TicketID</td></tr>
+            <tr><td>@ticket.TechnicianID</td></tr>
+            <tr><td>@ticket.CustID</td></tr>
+            <tr><td>@ticket.CreatedDate</td></tr>
+            <tr><td>@ticket.CompletedDate</td></tr>
+            <tr><td>@ticket.IsActive</td></tr>
+            <tr><td>@ticket.IssueDescription</td></tr>
+        }
+    </tbody>
+</table>
