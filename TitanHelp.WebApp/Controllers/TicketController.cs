@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using TitanHelp.Data.Models;
 using TitanHelp.Services;
-using TitanHelp.WebApp.Models;
 
 namespace TitanHelp.WebApp.Controllers
 {
@@ -26,9 +26,9 @@ namespace TitanHelp.WebApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post(TicketModel newTicket) 
+        public IActionResult Post(Ticket newTicket) 
         {
-
+            bool success = _ticketService.CreateNewTicket(newTicket);
             return Ok(newTicket);
         }
     }

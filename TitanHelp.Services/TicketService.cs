@@ -1,4 +1,5 @@
-using TitanHelp.WebApp.Models;
+
+using TitanHelp.Data.Models;
 
 namespace TitanHelp.Services
 {
@@ -10,10 +11,9 @@ namespace TitanHelp.Services
 
         }
 
-        public bool CreateNewTicket(TicketModel newTicket)
+        public bool CreateNewTicket(Ticket newTicket)
         {
             return true;
         }
-
     }
 }

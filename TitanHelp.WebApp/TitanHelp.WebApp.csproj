@@ -13,5 +13,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\TitanHelp.Services\TitanHelp.Services.csproj" />
+		<ProjectReference Include="..\TitanHelp.Data\TitanHelp.Data.csproj" />
+
 	</ItemGroup>
 </Project>

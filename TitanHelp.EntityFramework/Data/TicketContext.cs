@@ -6,7 +6,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using TitanHelp.WebApp.Domain.Models;
+using TitanHelp.Data.Models;
 
 namespace TitanHelp.EntityFramework.Data
 {
