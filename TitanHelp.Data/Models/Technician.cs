@@ -8,5 +8,9 @@ namespace TitanHelp.EntityFramework.Models
 {
     public class Technician
     {
+        public int Id { get; set; }
+        public string Username { get; set; }
+        public int IssuesResolved { get; set; }
+
     }
 }
