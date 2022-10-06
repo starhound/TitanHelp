@@ -14,9 +14,11 @@ namespace TitanHelp.WebApp.Controllers
             _ticketService = ticketService;
         }
 
-        public IActionResult Index()
+        [Route("Ticket")]
+        [HttpGet]
+        public IActionResult Ticket()
         {
-            return View();
+            return View("Ticket");
         }
 
         [HttpGet]
