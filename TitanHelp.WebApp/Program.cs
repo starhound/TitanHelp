@@ -1,3 +1,6 @@
+
+using TitanHelp.Services;
+
 namespace TitanHelp.WebApp
 {
     public class Program
@@ -8,6 +11,8 @@ namespace TitanHelp.WebApp
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            // DI
+            builder.Services.AddScoped<TicketService>();
 
             var app = builder.Build();
 
