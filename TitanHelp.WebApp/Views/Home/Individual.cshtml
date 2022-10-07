@@ -24,6 +24,7 @@ public class TicketController : Controller
  
         return View();
     }
+}
 
     [HttpDelete]
     public ActionResult Index()
@@ -39,4 +40,3 @@ public class TicketController : Controller
             return BadRequest(ticketId.ToString());
         }
     }
-}
