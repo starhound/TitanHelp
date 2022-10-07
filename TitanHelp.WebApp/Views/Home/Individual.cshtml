@@ -1,3 +1,9 @@
+using Microsoft.AspNetCore.Mvc;
+using System.Net;
+using TitanHelp.Data.Models;
+using TitanHelp.Services;
+using TitanHelp.WebApp.Models;
+
 public class TicketController : Controller
 {
     // GET: Home
@@ -22,5 +28,14 @@ public class TicketController : Controller
     [HttpDelete]
     public ActionResult Index()
     {
-        
+        [HttpDelete]
+        [Route("Ticket/deleteTicket")]
+        public ActionResult DeleteTicket(int ticketId)
+        {
+            if(_ticketService.DeleteTicket(ticketId))
+            {
+                return Ok(HttpStatusCode.Accepted);
+            }
+            return BadRequest(ticketId.ToString());
+        }
 }
