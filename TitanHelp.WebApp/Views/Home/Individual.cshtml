@@ -1,18 +1,20 @@
 public class TicketController : Controller
 {
     // GET: Home
-    public ActionResult Index()
+    public ActionResult Index(Individual, Ticket)
     {
         return View();
     }
  
     [HttpPost]
-    public ActionResult Index(Ticket)
+    public ActionResult Index(Individual, Ticket)
     {
-        int personId = person.PersonId;
-        string name = person.Name;
-        string gender = person.Gender;
-        string city = person.City;
+        int ID = Individual.ID;
+        string Username = Individual.Username;
+        string FirstName = Individual.FirstName;
+        string LastName = Individual.LastName;
+        string Email = Individual.Email;
+        DateTime UserCreationTime
  
         return View();
     }
